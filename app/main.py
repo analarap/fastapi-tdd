@@ -8,6 +8,7 @@ fake_items_db = {
     3: {"id": 3, "name": "Item 3"},
 }
 
+
 @app.get("/items/{item_id}")
 def get_item(item_id: int):
     if item_id not in fake_items_db:
